@@ -23,7 +23,7 @@ main{
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
-    transition:  all 0.3s linear;;
+    transition:  all 0.3s linear;
     text-align: center;
   }
 .title{
@@ -40,7 +40,7 @@ main{
 
   }
   .review:hover {
-    box-shadow: var(--dark-shadow);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
   .img-container {
     position: relative;
@@ -61,7 +61,6 @@ main{
   .img-container::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f10e";
     position: absolute;
     top: 0;
     left: 0;
@@ -82,4 +81,42 @@ main{
     top: -0.25rem;
     right: -0.5rem;
     border-radius: 50%;
+  }
+  #job {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: hsl(205, 78%, 60%);
+    font-size: 0.85rem;
+  }
+  #info {
+    margin-bottom: 0.75rem;
+  }
+  .prev-button,
+  .next-btn {
+    color: hsl(205, 90%, 76%);
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition:  all 0.3s linear;
+    cursor: pointer;
+  }
+  .prev-button:hover,
+  .next-btn:hover {
+    color: hsl(205, 78%, 60%);
+  }
+  .random {
+    margin-top: 0.5rem;
+    background: hsl(205, 100%, 96%);
+    color: hsl(205, 78%, 60%);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: 0.25rem;
+    transition:  all 0.3s linear;
+    border-color: hsl(205, 78%, 60%);
+    cursor: pointer;
+  }
+  .random:hover {
+    background: hsl(205, 78%, 60%);
+    color:  hsl(205, 86%, 17%);
   }
